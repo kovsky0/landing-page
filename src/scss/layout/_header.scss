@@ -1,0 +1,64 @@
+/*------------------------------------*\
+   #HEADER
+\*------------------------------------*/
+
+.page-header {
+    position: fixed;
+    padding: 10px 0 15px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 5;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 7px;
+        background-color: $secondary;
+
+        @include media-breakpoint-up(md) {
+            height: 12px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+.page-header__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.logo__img {
+    width: 25px;
+    padding-right: 5px;
+
+    @include media-breakpoint-up(md) {
+        width: 38px;
+    }
+}
+
+.logo__text {
+    font-size: 20px;
+    vertical-align: middle;
+    font-family: 'Merriweather', serif;
+
+    @include media-breakpoint-up(md) {
+        font-size: 30px;
+    }
+}

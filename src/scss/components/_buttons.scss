@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.button {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #979797;
+    background-color: $primary;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    font-size: $font-size-base;
+    border-radius: 6px;
+    padding: 11px 15px;
+    text-decoration: none;
+    min-width: 120px;
+
+    &:hover {
+        text-decoration: none;
+        background-color: #0c7183;
+        transition: all .15s ease-in-out;
+    }
+}
+

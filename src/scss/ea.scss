@@ -1,0 +1,47 @@
+/*----------------------------------------*\
+    #Efektywny Altruizm
+\*----------------------------------------*/
+//normalize
+@import 'base/normalize';
+
+//utils
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/helpers';
+@import 'utils/mixins';
+
+@import 'grid/bootstrap-grid';
+
+@import 'utils/text';
+@import 'utils/display';
+@import 'utils/flex';
+
+
+//base
+@import 'base/base';
+@import 'base/typography';
+
+//layout
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+//components
+@import 'components/sprite';
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/forms';
+
+@import 'components/section';
+@import 'components/article';
+@import 'components/contact-form';
+@import 'components/project';
+
+//pages
+@import 'pages/homepage';
+@import 'pages/community';
+
+//shame
+@import 'shame';
+
+

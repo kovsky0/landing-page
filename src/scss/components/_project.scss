@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    #PROJECT
+\*------------------------------------*/
+
+.projects {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $primary;
+
+        @include media-breakpoint-up(md) {
+            bottom: 35px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 0;
+        margin-bottom: -10px
+    }
+}
+
+.project {
+    background-color: $secondary;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    height: 118px;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: 10px;
+        height: 10px;
+        background: $secondary;
+
+        @include media-breakpoint-up(md) {
+            content: normal;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 40px;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+.project--expanded {
+    height: auto;
+    overflow: visible;
+
+    .project__see-more {
+        display: none;
+    }
+
+    .project__see-less {
+        display: block;
+    }
+
+    &:after {
+        content: normal;
+    }
+}
+
+.project__header {
+    color: $primary;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.project__see-more {
+    position: absolute;
+    right: 50px;
+    bottom: 23px;
+    background-color: $secondary;
+    z-index: 2;
+    padding-left: 25px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), $secondary 15%, $secondary);
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.project__see-less {
+    display: none;
+    text-align: right;
+}

@@ -1,0 +1,208 @@
+/*------------------------------------*\
+    #COMMUNITY PAGE
+\*------------------------------------*/
+
+//zaangazowani
+.section-team {
+    max-height: 385px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.25s ease-out;
+    padding: 20px 0 40px;
+
+    @include media-breakpoint-up(md) {
+        max-height: 300px;
+        padding-bottom: 20px;
+    }
+}
+
+.show-more-less {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(11, 145, 170, .58);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: #fff;
+    background-image: linear-gradient(to right, rgb(167, 215, 224) 65%, white 35%);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 3px;
+
+    .icon-arrow {
+        padding: 0 10px;
+    }
+}
+
+.show-less {
+    display: none;
+}
+
+.section-team--expanded {
+    max-height: 1000px !important;
+    transition: max-height 0.25s ease-in;
+
+    .show-less {
+        display: block;
+    }
+
+    .show-more {
+        display: none;
+    }
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.person {
+    width: 145px;
+    height: 140px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        width: 186px;
+        height: 195px;
+    }
+}
+
+.person__img {
+    border-radius: 50%;
+    width: 97px;
+    height: 97px;
+
+    @include media-breakpoint-up(md) {
+        width: 132px;
+        height: 132px;
+    }
+}
+
+.person__name {
+    color: $primary;
+}
+
+.person__desc {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    bottom: -10px;
+    left: -15px;
+    padding: 10px;
+    background-color: $secondary;
+    font-size: 12px;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 500ms;
+    cursor: default;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+        top: 0;
+        right: -10px;
+        bottom: 0;
+        left: -10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .person:active &,
+    .person:hover & {
+        opacity: 1;
+    }
+}
+
+//Dołącz do nas section
+.join-us-section {
+
+    h2 {
+        @include media-breakpoint-up(md) {
+            display: inline-block;
+            border-bottom: 3px solid $primary;
+            margin-bottom: 45px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 45px;
+    }
+}
+
+//fb
+.fb-events {
+
+    @include media-breakpoint-up(md) {
+        border-right: 3px solid $primary;
+        font-size: 18px;
+    }
+}
+
+.fb-logo {
+    font-size: 60px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.fb-groups-list {
+    font-weight: 700;
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 20px;
+    }
+}
+
+//organizacje
+.organizations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organization {
+    text-align: center;
+    width: 130px;
+    color: $primary;
+
+    &:not(:last-child) {
+        margin-right: 5px;
+
+        @include media-breakpoint-up(md) {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 140px;
+    }
+}
+
+.organization__img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 10px;
+    }
+}

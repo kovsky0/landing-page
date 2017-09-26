@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #SECTION
+\*------------------------------------*/
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-big {
+    padding: 35px;
+    padding-bottom: 35px;
+}
+
+.section-padding-top {
+    padding-top: 35px;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 50px;
+    }
+}
+
+.section__border {
+    @include media-breakpoint-up(md) {
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 3px;
+            position: absolute;
+            right: 100px;
+            top: 0;
+            height: 100%;
+            background-color: $primary;
+        }
+    }
+}
+
+.section__border--first {
+    @include media-breakpoint-up(md) {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 3px;
+            position: absolute;
+            right: 100px;
+            top: -50px;
+            height: 50px;
+            background-color: $primary;
+        }
+    }
+}

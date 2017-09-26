@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #NAVIGATION
+\*------------------------------------*/
+
+.main-menu__input {
+    display: none;
+
+    &:checked {
+        ~ .main-menu {
+            display: block;
+        }
+
+        ~ .menu-overlay {
+            display: block;
+        }
+    }
+}
+
+.main-menu__label {
+    background: linear-gradient(to bottom, $primary 0%, $primary 20%, transparent 20%, transparent 40%, $primary 40%, $primary 60%, transparent 60%, transparent 80%, $primary 80%, $primary 100%); //Gradient Hamburger
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 18px;
+    margin: 0;
+}
+
+.main-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    border: 1px solid $secondary;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    padding: 15px;
+    z-index: 2;
+
+    li {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.menu-overlay {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 59px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(216, 216, 216, .5);
+}
+
+@include media-breakpoint-up(md) {
+    .main-menu__label,
+    .main-menu__input {
+        display: none;
+    }
+
+    .main-menu {
+        display: block;
+        position: static;
+        display: flex;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: auto;
+        align-items: center;
+
+        li {
+            padding: 0 5px;
+            margin: 0;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .main-menu--active {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 5%;
+            bottom: -34px;
+            height: 3px;
+            width: 90%;
+            background-color: $primary;
+        }
+
+        a {
+            color: $primary;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

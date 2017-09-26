@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #HOME PAGE
+\*------------------------------------*/
+
+.homepage-title {
+    text-align: center;
+    padding: 40px 20px;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-bottom: 3px solid $primary;
+    }
+}
+
+.homepage-boxes {
+    @include media-breakpoint-up(md) {
+        position: relative;
+        background: linear-gradient(90deg, $secondary 50%, #fff 50%);
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background-color: $primary;
+            width: 3px;
+            height: 100%;
+        }
+    }
+}
+
+.homepage-boxes--first {
+    @include media-breakpoint-up(md) {
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -30px;
+            background-color: $primary;
+            width: 3px;
+            height: 30px;
+        }
+
+        .homepage-box--left::after {
+            content: '';
+            position: absolute;
+            right: -23px;
+            top: 0;
+            background-color: $secondary;
+            width: 20px;
+            height: 100%;
+        }
+    }
+}
+
+.homepage-boxes--second {
+    @include media-breakpoint-up(md) {
+        background: linear-gradient(90deg, #fff 50%, $secondary 50%);
+
+        .homepage-box--left {
+            background-color: #fff;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: $secondary;
+                width: 20px;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.homepage-boxes--empty {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+        height: 120px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background-color: $primary;
+            width: 3px;
+            height: 100%;
+        }
+    }
+}
+
+.homepage-box {
+    @include media-breakpoint-up(md) {
+        height: 245px;
+
+        h2 {
+            margin-bottom: 45px;
+        }
+    }
+}
+
+.homepage-box--left {
+    border-bottom: 3px solid $primary;
+
+    @include media-breakpoint-up(md) {
+        border-bottom: none;
+    }
+}

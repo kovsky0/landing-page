@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #CONTACT FORM
+\*------------------------------------*/
+
+.contact-form {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(md) {
+        max-width: 300px;
+        margin-top: 0;
+    }
+}

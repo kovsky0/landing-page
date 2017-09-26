@@ -1,0 +1,66 @@
+/*------------------------------------*\
+   #TYPOGRAPHY
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 32px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 32px;
+        line-height: 43px;
+    }
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 32px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.list-unstyled {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+

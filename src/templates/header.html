@@ -1,0 +1,33 @@
+<header class="page-header border-bottom">
+    <div class="container-fluid page-container">
+        <nav class="page-header__nav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" class="logo__img" alt="Efektywny Altruizm">
+                <span class="logo__text"><strong>Efektywny</strong> Altruizm</span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="main-menu__input"/>
+            <label for="menu-toggle" class="main-menu__label"></label>
+            <div class="menu-overlay"></div>
+
+            <ul class="main-menu">
+                <li {%if page=='about' %}class="main-menu--active" {% endif %}>
+                    <a href="o-ruchu.html">O ruchu</a>
+                </li>
+
+                <li {%if page=='community' %}class="main-menu--active" {% endif %}>
+                    <a href="polska-spolecznosc.html">Polska społeczność</a>
+                </li>
+
+                <li {%if page=='getInvolved' %}class="main-menu--active" {% endif %}>
+                    <a href="zacznij-dzialac.html">Zacznij działać</a>
+                </li>
+
+                <li><a href="//www.effectivealtruism.org/" target="_blank">Blog</a></li>
+                <li class="d-md-none"><a href="">Policz uratowane życia</a></li>
+                <li class="d-md-none"><a href="">Materiały dla mediów</a></li>
+                <li class="d-md-none"><a href="napisz-do-nas.html">Napisz do nas</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

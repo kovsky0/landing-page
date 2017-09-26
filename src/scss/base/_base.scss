@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $secondary;
+    height: 100vh;
+}
+
+.page-container {
+    max-width: map-get($container-max-widths, lg);
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.page-main {
+    background-color: #fff;
+    padding-top: 59px;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 105px;
+    }
+}
+
