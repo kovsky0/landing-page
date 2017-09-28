@@ -1,4 +1,5 @@
-scss_files: "**/*.scss"
+files: 
+  include: 'src/**/*.scss'
 
 linters:
   BangFormat:

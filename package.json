@@ -13,10 +13,12 @@
     "gulp-uglify": "^3.0.0",
     "pixrem": "^4.0.1",
     "postcss-opacity": "^5.0.0",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "sass-lint": "^1.11.1"
   },
   "scripts": {
     "build": "gulp",
+    "lint": "sass-lint -c .scss-lint.yml",
     "serve": "gulp dev"
   }
 }
