@@ -20,5 +20,8 @@
     "build": "gulp",
     "lint": "sass-lint -c .scss-lint.yml",
     "serve": "gulp dev"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.0"
   }
 }
