@@ -1,5 +1,8 @@
 # Install
 
+First of all - the build process is based on node. To install node -
+https://nodejs.org/es/download/
+
 Make sure you have yarn installed - https://yarnpkg.com/en/docs/install
 
 Then in project directory:
