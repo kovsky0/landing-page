@@ -8,9 +8,9 @@
 
             <input type="checkbox" id="menu-toggle" class="main-menu__input"/>
             <label for="menu-toggle" class="main-menu__label"></label>
-            <div class="menu-overlay"></div>
+            <div class="menu-overlay d-md-none"></div>
 
-            <ul class="main-menu">
+            <ul class="main-menu d-md-flex">
                 <li {%if page=='about' %}class="main-menu--active" {% endif %}>
                     <a href="o-ruchu.html">O ruchu</a>
                 </li>
