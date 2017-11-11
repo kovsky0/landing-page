@@ -23,7 +23,10 @@
                     <a href="zacznij-dzialac.html">Zacznij działać</a>
                 </li>
 
-                <li><a href="//www.effectivealtruism.org/" target="_blank">Blog</a></li>
+                <li {%if page=='blog' %}class="main-menu--active" {% endif %}>
+                    <a href="blog-list.html">Blog</a>
+                </li>
+
                 <li class="d-md-none"><a href="">Policz uratowane życia</a></li>
                 <li class="d-md-none"><a href="">Materiały dla mediów</a></li>
                 <li class="d-md-none"><a href="napisz-do-nas.html">Napisz do nas</a></li>

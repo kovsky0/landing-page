@@ -1,0 +1,37 @@
+{% extends "blog.html" %}
+
+{% block content %}
+
+<section class="article-wrapper border-bottom text-center text-md-left">
+    <div class="page-container">
+        <div class="row">
+
+            <div class="col-12 col-md-8 order-md-1">
+                <article class="article">
+                    <h2 class="border-bottom d-inline-block">Post 1</h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan dui quis dictum placerat. Ut sed fringilla massa, sed congue nulla. Vestibulum a dignissim sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eros elit, hendrerit quis est eget, vulputate vulputate lacus. Nam sed accumsan est, at auctor orci. Aenean imperdiet consequat efficitur. Quisque aliquam faucibus magna. Nam at ligula ipsum. Nam vitae nibh placerat diam maximus sollicitudin nec non metus. Ut sed tortor facilisis, elementum felis non, feugiat ex. Aenean eget elit urna. Sed tincidunt dictum lorem id varius. Donec justo urna, rutrum ac justo sed, malesuada molestie sapien.
+                    </p>
+
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block scripts %}
+<script type="text/javascript" src="js/sticky-sidebar.min.js"></script>
+<script>
+    var sidebar = new StickySidebar('#article-sidebar', {
+        containerSelector: '.article-wrapper',
+        innerWrapperSelector: '.article-sidebar__inner',
+        topSpacing: 155,
+        bottomSpacing: 20,
+        minWidth: 576
+    });
+</script>
+{% endblock scripts %}
