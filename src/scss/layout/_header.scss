@@ -35,6 +35,16 @@
     height: 53px;
     align-items: center;
     justify-content: space-between;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+        }
+    }
 }
 
 .logo {
