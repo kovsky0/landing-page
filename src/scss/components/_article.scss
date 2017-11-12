@@ -39,6 +39,16 @@
 }
 
 .article-sidebar__menu {
+    a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+        }
+    }
+
     li {
         margin-bottom: 10px;
     }
