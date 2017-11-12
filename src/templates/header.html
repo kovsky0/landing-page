@@ -2,7 +2,7 @@
     <div class="container-fluid page-container">
         <nav class="page-header__nav">
             <a href="index.html" class="logo">
-                <img src="images/logo.svg" class="logo__img" alt="Efektywny Altruizm">
+                <img src="{{ base_url }}images/logo.svg" class="logo__img" alt="Efektywny Altruizm">
                 <span class="logo__text"><strong>Efektywny</strong> Altruizm</span>
             </a>
 
@@ -12,24 +12,24 @@
 
             <ul class="main-menu d-md-flex">
                 <li {%if page=='about' %}class="main-menu--active" {% endif %}>
-                    <a href="o-ruchu.html">O ruchu</a>
+                    <a href="{{ base_url }}o-ruchu.html">O ruchu</a>
                 </li>
 
                 <li {%if page=='community' %}class="main-menu--active" {% endif %}>
-                    <a href="polska-spolecznosc.html">Polska społeczność</a>
+                    <a href="{{ base_url }}polska-spolecznosc.html">Polska społeczność</a>
                 </li>
 
                 <li {%if page=='getInvolved' %}class="main-menu--active" {% endif %}>
-                    <a href="zacznij-dzialac.html">Zacznij działać</a>
+                    <a href="{{ base_url }}zacznij-dzialac.html">Zacznij działać</a>
                 </li>
 
                 <li {%if page=='blog' %}class="main-menu--active" {% endif %}>
-                    <a href="blog-list.html">Blog</a>
+                    <a href="{{ base_url }}blog-list.html">Blog</a>
                 </li>
 
                 <li class="d-md-none"><a href="">Policz uratowane życia</a></li>
                 <li class="d-md-none"><a href="">Materiały dla mediów</a></li>
-                <li class="d-md-none"><a href="napisz-do-nas.html">Napisz do nas</a></li>
+                <li class="d-md-none"><a href="{{ base_url }}napisz-do-nas.html">Napisz do nas</a></li>
             </ul>
         </nav>
     </div>
