@@ -9,13 +9,13 @@
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
         .text#{$infix}-left {
-            text-align: left !important;
+            text-align: left;
         }
         .text#{$infix}-right {
-            text-align: right !important;
+            text-align: right;
         }
         .text#{$infix}-center {
-            text-align: center !important;
+            text-align: center;
         }
     }
 }

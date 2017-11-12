@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<section class="article-wrapper border-bottom text-center text-md-left">
+<section class="article-wrapper border-bottom">
     <div class="page-container">
         <div class="row">
 
@@ -22,16 +22,3 @@
 </section>
 
 {% endblock content %}
-
-{% block scripts %}
-<script type="text/javascript" src="js/sticky-sidebar.min.js"></script>
-<script>
-    var sidebar = new StickySidebar('#article-sidebar', {
-        containerSelector: '.article-wrapper',
-        innerWrapperSelector: '.article-sidebar__inner',
-        topSpacing: 155,
-        bottomSpacing: 20,
-        minWidth: 576
-    });
-</script>
-{% endblock scripts %}
