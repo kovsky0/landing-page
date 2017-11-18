@@ -24,18 +24,23 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before {
-    content: "\e903";
-}
-.icon-arrow-down:before {
-    content: "\e900";
-}
-.icon-fb .path1:before {
-    content: "\e901";
-    color: rgb(60, 90, 153);
-}
-.icon-fb .path2:before {
-    content: "\e902";
-    margin-left: -1em;
-    color: rgb(255, 255, 255);
+.fb-logo  {
+    .icon-arrow-up:before {
+      content: "\e903";
+    }
+    .icon-arrow-down:before {
+        content: "\e900";
+    }
+    .icon-fb .path1:before {
+        content: "\e901";
+        color: rgb(60, 90, 153);
+    }
+    &:hover .icon-fb .path1:before {
+        text-shadow: 1px 1px 2px black;
+    }
+    .icon-fb .path2:before {
+        content: "\e902";
+        margin-left: -1em;
+        color: rgb(255, 255, 255);
+    }
 }
