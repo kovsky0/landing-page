@@ -87,3 +87,13 @@
         }
     }
 }
+
+.breadcrumb {
+  a {
+    color: $text-color;
+  }
+
+  .active {
+    color: $accent;
+  }
+}
