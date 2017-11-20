@@ -9,15 +9,18 @@
         <div class="col-12">
           <h2 class="border-bottom d-inline-block">Napisz do nas</h2>
 
-          <form class="contact-form">
+          <form class="contact-form"
+              action="https://formspree.io/marcin.wosinek@gmail.com"
+
+              method="POST">
             <div class="form-group">
               <label for="name" class="control-label">Twoje imię i nazwisko</label>
-              <input type="text" id="name" class="form-control" placeholder="Marta Kowalska" required>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Marta Kowalska" required>
             </div>
 
             <div class="form-group">
               <label for="email" class="control-label">Adres email</label>
-              <input type="email" id="email" class="form-control" placeholder="marta@mail.com" required>
+              <input type="email" id="email" name="_replayto" class="form-control" placeholder="marta@mail.com" required>
             </div>
 
             <div class="form-group">
