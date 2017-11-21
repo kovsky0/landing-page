@@ -67,3 +67,10 @@
         font-size: 30px;
     }
 }
+
+.page-container [id]:before {
+    content:"";
+    display:block;
+    height: 106px; /* fixed header height*/
+    margin: -106px 0 0; /* negative fixed header height */
+}
