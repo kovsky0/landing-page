@@ -24,13 +24,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+  content: "\e903";
+}
+.icon-arrow-down:before {
+    content: "\e900";
+}
+
 .fb-logo  {
-    .icon-arrow-up:before {
-      content: "\e903";
-    }
-    .icon-arrow-down:before {
-        content: "\e900";
-    }
     .icon-fb .path1:before {
         content: "\e901";
         color: rgb(60, 90, 153);
