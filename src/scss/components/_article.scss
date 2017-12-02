@@ -36,6 +36,10 @@
             background-color: $primary;
         }
     }
+
+    .list-group-item.active {
+      border-bottom: 3px solid #0b91aa;
+    }
 }
 
 .article-sidebar__menu {
