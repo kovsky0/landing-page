@@ -58,6 +58,29 @@
     }
 }
 
+[data-toggle="collapse"] {
+
+  color: $accent;
+
+  .show-less {
+    display: block;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  &.collapsed {
+    .show-less {
+      display: none;
+    }
+
+    .show-more {
+      display: block;
+    }
+  }
+}
+
 .team {
     display: flex;
     flex-wrap: wrap;
