@@ -81,6 +81,20 @@
   }
 }
 
+.collapse {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease;
+}
+
 .team {
     display: flex;
     flex-wrap: wrap;
