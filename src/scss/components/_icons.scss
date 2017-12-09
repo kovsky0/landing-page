@@ -24,11 +24,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before {
-  content: "\e903";
+.icon-arrow-up {
+  width: 16px;
+  height: 10px;
+  background-image: url('../images/arrow-up.png');
+  display: inline-block;
 }
-.icon-arrow-down:before {
-    content: "\e900";
+.icon-arrow-down {
+  width: 16px;
+  height: 10px;
+  background-image: url('../images/arrow-down.png');
+  display: inline-block;
 }
 
 .fb-logo  {
