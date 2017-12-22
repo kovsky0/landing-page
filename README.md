@@ -34,4 +34,4 @@ npm run serve
 
 # Content ideas
 
-the content ideas are managed on https://trello.com/b/Cxeoqkqu/tre%C5%9Bci-na-stron%C4%99
+the content ideas are managed on https://trello.com/b/Cxeoqkqu/treści-na-stronę
